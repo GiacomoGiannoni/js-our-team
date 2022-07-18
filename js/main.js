@@ -31,3 +31,10 @@ const team = [
     },
   ];
   console.log(team)
+
+  let userInfos = "";
+
+for (let i = 0; i < team.length; i++) {
+    userInfos = team[i];
+    console.log(userInfos.name, userInfos.role, userInfos.image)
+}
