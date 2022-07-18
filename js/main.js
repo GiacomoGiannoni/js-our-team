@@ -36,5 +36,7 @@ const team = [
 
 for (let i = 0; i < team.length; i++) {
     userInfos = team[i];
-    console.log(userInfos.name, userInfos.role, userInfos.image)
+    //console.log(userInfos.name, userInfos.role, userInfos.image);
+    const domElement = document.querySelector("div");
+    domElement.innerHTML += `Name: ${userInfos.name}<br><br>Job: ${userInfos.role}<br><br><img src = "img/${userInfos.image}"><br><br>`;
 }
